@@ -1,0 +1,26 @@
+﻿@using Foundation.Features.Blocks.LiteratureBlock;
+
+@model LiteratureBlockViewModel
+
+<div>
+    <div class="mt-2">
+        <h2>Literature</h2>
+        <div class="row">
+            @foreach (var item in Model.Documents)
+            {
+                <div class="col-12 literature">
+                    <div class="product-tile-list__right-box">
+                        <div class="title">
+                            <a href="@item.Url" class="account-link"><h5>@item.Title</h5></a>
+                        </div>
+                        <div class="content product-tile-list__content">
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
